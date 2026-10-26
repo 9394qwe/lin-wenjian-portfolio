@@ -1,0 +1,23 @@
+.project-gallery[open]{display:grid;grid-template-rows:96px minmax(0,1fr) 106px;overflow:hidden}
+.project-gallery>header{height:auto;min-height:0;padding:16px 28px}
+.gallery-stage{height:auto;min-height:0;overflow:hidden;padding:12px 18px;grid-template-columns:58px minmax(0,1fr) 58px}
+.gallery-stage img{display:block;justify-self:center;align-self:center;width:auto;height:auto;min-width:0;min-height:0;max-width:calc(100vw - 170px);max-height:calc(100vh - 250px);margin:0;object-fit:contain;object-position:center}
+.gallery-stage img{cursor:zoom-in}
+.gallery-thumbs{height:auto;min-height:0;padding:10px 28px;align-items:center;position:relative;inset:auto}
+.gallery-thumbs button{height:82px;flex:0 0 110px}
+.gallery-thumbs img{width:100%;height:80px;object-fit:contain}
+@media(max-width:580px){
+  .project-gallery[open]{grid-template-rows:104px minmax(0,1fr) 92px}
+  .project-gallery>header{height:auto;padding:14px 16px}
+  .gallery-stage{height:auto;min-height:0;padding:6px;grid-template-columns:40px minmax(0,1fr) 40px}
+  .gallery-stage img{width:auto;height:auto;max-width:calc(100vw - 92px);max-height:calc(100vh - 230px)}
+  .gallery-thumbs{height:auto;padding:8px 14px}
+  .gallery-thumbs button{height:72px;flex-basis:90px}
+  .gallery-thumbs img{height:70px}
+}
+.zoom-viewer:not([open]){display:none}.zoom-viewer[open]{position:fixed;inset:0;width:100vw;max-width:none;height:100vh;max-height:none;margin:0;padding:0;border:0;background:#050505;color:#fff;display:grid;grid-template-rows:62px minmax(0,1fr);overflow:hidden}.zoom-viewer::backdrop{background:#050505}
+.directory-grid{gap:34px 16px}.directory-card img{width:100%;height:clamp(300px,32vw,520px);object-fit:cover;object-position:center;background:#181918}.directory-card>div{padding-top:12px}.directory-card h3{margin-bottom:5px}@media(max-width:700px){.directory-grid{gap:34px}.directory-card img{height:62vw;min-height:260px;max-height:430px}}
+.directory-card[data-project="beautyDetail"] img{object-position:center top}
+.directory-card{margin-bottom:200px}
+.directory-grid{display:block;columns:2;column-gap:16px}.directory-card{display:inline-block;width:100%;margin:0 0 26px;break-inside:avoid;vertical-align:top}.directory-card img{width:100%;height:auto;min-height:0;max-height:none;object-fit:contain;object-position:center}.directory-card[data-project="beautyDetail"] img{object-position:center}@media(max-width:700px){.directory-grid{columns:1}.directory-card{margin-bottom:30px}.directory-card img{height:auto;min-height:0;max-height:none}}
+.zoom-viewer{position:fixed;inset:0;z-index:1000;background:rgba(5,5,5,.98);display:grid;grid-template-rows:62px minmax(0,1fr);color:#fff}.zoom-viewer[hidden]{display:none}.zoom-toolbar{padding:0 22px;border-bottom:1px solid #333;display:flex;align-items:center;gap:18px}.zoom-toolbar>span{margin-right:auto;color:#888;font-size:10px;letter-spacing:.08em}.zoom-level{font-size:10px;color:var(--lime)}.zoom-toolbar button{height:36px;padding:0 14px;border:1px solid #444;background:transparent;color:#fff;cursor:pointer}.zoom-close{width:38px;padding:0!important;font-size:22px}.zoom-canvas{min-height:0;overflow:hidden;display:grid;place-items:center;cursor:grab;touch-action:none}.zoom-canvas.dragging{cursor:grabbing}.zoom-canvas img{max-width:90vw;max-height:calc(100vh - 100px);object-fit:contain;transform-origin:center center;user-select:none;-webkit-user-drag:none;will-change:transform}@media(max-width:580px){.zoom-toolbar>span{display:none}.zoom-toolbar{padding:0 12px}.zoom-canvas img{max-width:96vw;max-height:calc(100vh - 80px)}}
